@@ -17,7 +17,7 @@ export const fetchCryptoPrices = async (): Promise<CryptoData[]> => {
     const data = await response.json();
     return data.map((item: any) => ({
         id: item.id,
-        Symbol: item.symbol,
+        symbol: item.symbol,
         name: item.name,
         price: item.current_price,
     }));
