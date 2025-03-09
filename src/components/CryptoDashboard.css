@@ -1,0 +1,20 @@
+.dashboard-container {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .select-container {
+    margin: 20px auto;
+  }
+  
+  select {
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  

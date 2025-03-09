@@ -23,7 +23,7 @@ h1 {
 
 /* Glassmorphism card style */
 .price-card {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.25); /* Slightly higher opacity for a balanced glass effect */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
@@ -33,7 +33,7 @@ h1 {
   width: 250px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
-  color: black;
+  color: #333; /* Using a dark gray for better contrast on a light background */
 }
 
 .price-card:hover {
@@ -44,7 +44,7 @@ h1 {
 .price-card h3 {
   margin: 0;
   font-size: 1.3em;
-  color: black;
+  color: #2c3e50; /* Darker color for headings */
 }
 
 .price-card p {

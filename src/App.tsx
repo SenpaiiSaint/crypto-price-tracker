@@ -40,8 +40,7 @@ const App: React.FC = () => {
   if (loading) return <p>Loading...</p>;
 
   return (
-   
-    <motion.div 
+    <motion.div
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -56,18 +55,18 @@ const App: React.FC = () => {
       </motion.h1>
       <motion.div
         className="price-list"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "20px",
-            marginTop: "20px",
-          }}
-        >
-          {prices.map((crypto) => (
-            <motion.div key={crypto.id} variants={itemVariants}>
-              <PriceCard crypto={crypto} />
-            </motion.div>
-          ))}
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "20px",
+          marginTop: "20px",
+        }}
+      >
+        {prices.map((crypto) => (
+          <motion.div key={crypto.id} variants={itemVariants}>
+            <PriceCard crypto={crypto} />
+          </motion.div>
+        ))}
       </motion.div>
     </motion.div>
   );
