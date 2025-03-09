@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchCryptoPrices, CryptoData } from "./services/cryptoService";
 import PriceCard from "./components/PriceCard";
 import { motion } from "motion/react";
+import "./App.css";
 
 const containerVariants = {
   hidden: { opacity: 0 },
